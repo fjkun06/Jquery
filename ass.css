@@ -7,7 +7,7 @@
     display: none;
 }
 
-#container{
+.container{
     display: grid;
     grid-template-columns: repeat (8, 1fr);
     grid-template-rows: repeat (2, 1fr);
@@ -17,19 +17,20 @@
     color: #333;
     margin: 0;
     margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 
-#container div{
+.container div{
     padding: 25px;
     background-color: #fff;
 }
 
-#one{
+.one{
     grid-column: 1 / 2;
 }
 
-#txt{
+.txt{
     grid-column: 2 / 9;
     max-width: 100%;
     max-height: 100%;
@@ -57,10 +58,15 @@ fieldset{
     bottom: 40px;
 }
 
-textarea{
+.put{
     margin-left: 0vw;
     margin-top: 10px;
     padding: 5px;
+}
+
+.put input{
+    width: 400px;
+    height: 70px;
 }
 
 #btn{

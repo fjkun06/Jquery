@@ -10,16 +10,24 @@
 
 </head>
 <body>
-    <div id="all">
+    <ul id="all">
     
         <fieldset id="fs">
             <legend>Text</legend>
-            <label for="file" style="cursor: pointer;">Upload Image</label>
+            <form >
+                <label for="file" style="cursor: pointer;">Upload Image</label><br>
                 <input type="file" name="image" accept="image/*" id="file" style="display: none;">
-            <textarea name="text" id="ta" cols="60" rows="5" placeholder="Enter your text here."></textarea>
+           
+            <div class="put">
+                <label for="text">Enter Text:</label>
+                <input type="text" name="text" id="texto" placeholder="Enter Text">
+            </div>
+            
             <button type="submit" id="btn">Send</button>
+            </form>
+            
         </fieldset>
-    </div>
+    </ul>
     
 
     <script src="ass.js"></script>
